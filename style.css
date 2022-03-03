@@ -1,42 +1,149 @@
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: none;
-    box-sizing: border-box;
-  
-    background: transparent;
-  
-    font-family: inherit;
-    
-    text-decoration: none;
-  }
-  
-  ol, ul, li {
-    list-style:none;
-    display:block;
-  }
-  
-  table {
-    border-collapse:collapse;
-    border-spacing:0
-  }
-  
-  a img {
-    border: none
-  }
-  
-  button, a {
-    cursor: pointer;
-    color: inherit
-  }
-  
-  textarea {
-    resize: none
-  }
-  
-  button, input, textarea, select {
-    appearance: none !important;
-    -webkit-appearance: none !important;
-    border-radius: 0
-  }
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+
+  background: transparent;
+
+  font-family: inherit;
+
+  text-decoration: none;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a img {
+  border: none;
+}
+
+button,
+a {
+  cursor: pointer;
+  color: inherit;
+}
+
+textarea {
+  resize: none;
+}
+
+button,
+input,
+textarea,
+select {
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  border-radius: 0;
+}
+/* ---------------- CSS reset END ----------------*/
+
+:root {
+  --primary: #242d38;
+  --secondary: #efd592;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+  background-color: var(--primary);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  background-color: var(--primary);
+  color: var(--secondary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+  border-bottom: solid 1px var(--secondary);
+  text-transform: uppercase;
+}
+
+header h1 {
+  font-size: 36px;
+  font-weight: 400;
+}
+
+header .menu {
+  font-size: 24px;
+}
+
+header h1,
+header .menu {
+  margin: 15px;
+}
+
+main {
+  max-width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 90px 20px;
+   margin: 150px auto;
+  /* margin-top: 100px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 150px; */
+}
+
+.card {
+  padding: 40px;
+  width: 400px;
+  height: 400px;
+  color: var(--primary);
+  background-color: var(--secondary);
+}
+
+.index {
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  background-color: var(--primary);
+  color: var(--secondary);
+  border: 1px solid var(--secondary);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 36px;
+}
+
+.sub {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.watch-btn {
+  background-color: var(--primary);
+  color: var(--secondary);
+  font-size: 14px;
+  width: 100%;
+  height: 60px;
+  border: 1px solid var(--secondary);
+}
+
