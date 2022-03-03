@@ -57,7 +57,7 @@ select {
   font-family: "Poppins", sans-serif;
 }
 
-body{
+body {
   background-color: var(--primary);
 }
 
@@ -95,20 +95,22 @@ main {
   display: flex;
   flex-wrap: wrap;
   gap: 90px 20px;
-   margin: 150px auto;
-  /* margin-top: 100px;
+  margin: 150px auto;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
-  margin-top: 150px; */
+  margin-top: 150px;
 }
 
 .card {
   padding: 40px;
-  width: 400px;
-  height: 400px;
+  width: 400;
+  width: 450px;
+  height: 450px;
   color: var(--primary);
   background-color: var(--secondary);
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .index {
@@ -121,6 +123,9 @@ main {
   display: flex;
   justify-content: center;
   align-content: center;
+  position: absolute;
+  top: -20px;
+  align-self: center;
 }
 
 .title {
@@ -142,24 +147,35 @@ main {
   background-color: var(--primary);
   color: var(--secondary);
   font-size: 14px;
-  width: 100%;
+  width: calc(100% - 80px);
   height: 60px;
   border: 1px solid var(--secondary);
-  margin: 25px 0;
+  position: absolute;
+  justify-content: center;
+  bottom: -30px;
+}
+
+.watch-btn:hover {
+  background-color: var(--secondary);
+  color: var(--primary);
+  border: 1px solid var(--primary);
 }
 
 hr {
   border: 0;
-  clear:both;
-  display:block;
-  width: 96%;               
-  background-color:var(--primary);
+  clear: both;
+  display: block;
+  width: 96%;
+  background-color: var(--primary);
   height: 1px;
   margin: 10px 0;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 620px) {
   header h1 {
     font-size: 16px;
+  }
+  .card {
+    width: 400;
   }
 }
